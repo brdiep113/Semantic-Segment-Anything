@@ -1,5 +1,5 @@
 torch==1.9.1
-torchvision==0.10.1
+torchvision==0.10.0
 torchaudio==0.9.1
 addict==2.4.0
 blis==0.7.9
