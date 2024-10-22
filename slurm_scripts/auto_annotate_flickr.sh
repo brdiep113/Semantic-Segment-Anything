@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --mem=64G
-#SBATCH --gpus-per-node=p100:8
+#SBATCH --gpus-per-node=v100l:1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --time=8:00:00    
