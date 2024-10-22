@@ -10,7 +10,7 @@
 cd ~/projects/def-lingjzhu/brdiep/Semantic-Segment-Anything
 
 # Set up modules/virtual environment
-module purge
+module --force purge
 module load StdEnv/2020 python/3.7 scipy-stack gcc/11.3 arrow cuda opencv
 source ~/py37/bin/activate
 
