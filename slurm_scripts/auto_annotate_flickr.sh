@@ -11,7 +11,7 @@ cd ~/projects/def-lingjzhu/brdiep/Semantic-Segment-Anything
 
 # Set up modules/virtual environment
 module --force purge
-module load StdEnv/2020 python/3.7 scipy-stack gcc/11.3 arrow cuda opencv
+module load StdEnv/2020 python/3.8 scipy-stack/2020a gcc cuda opencv
 source ~/py37/bin/activate
 
 python scripts/main_ssa_engine.py --data_dir=~/scratch/Flickr8k_dataset --out_dir=~/scratch/Flickr8k_annotated --world_size=8 --save_img --sam --ckpt_path=ckp/sam_vit_h_4b8939.pth
