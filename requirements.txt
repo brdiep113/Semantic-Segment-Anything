@@ -1,6 +1,6 @@
 torch==1.9.1
 torchvision==0.10.0
-torchaudio==0.9.1
+torchaudio==0.9.0
 addict==2.4.0
 blis==0.7.9
 catalogue==2.0.8
