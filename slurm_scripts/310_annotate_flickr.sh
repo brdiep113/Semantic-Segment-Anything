@@ -14,5 +14,6 @@ module purge
 module load StdEnv/2023 python/3.10 scipy-stack gcc cuda opencv
 source ~/py310/bin/activate
 
+pip install --upgrade mmcv==2.0.0
 python scripts/main_ssa_engine.py --data_dir=~/scratch/Flickr8k_dataset --out_dir=~/scratch/Flickr8k_annotated --world_size=8 --save_img --sam --ckpt_path=ckp/sam_vit_h_4b8939.pth
 
