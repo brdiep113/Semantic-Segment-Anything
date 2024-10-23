@@ -16,7 +16,13 @@ virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 
 pip install --no-index --upgrade pip
-pip install torch==1.9.0 torchvision==0.10.1 torchaudio==0.9.1 transformers==4.27.4 mmsegmentation==0.26.0 mmdet==2.25.3 spacy==3.5.1
+pip install torch==1.9.0
+pip install torchvision==0.11.1 
+pip install torchaudio==0.9.1 
+pip install transformers==4.27.4 
+pip install mmsegmentation==0.26.0 
+pip install mmdet==2.25.3 
+pip install spacy==3.5.1
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/mmcv_full-1.3.18-cp38-cp38-manylinux1_x86_64.whl
 python -m spacy download en_core_web_sm
 
