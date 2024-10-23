@@ -10,7 +10,8 @@
 cd ~/projects/def-lingjzhu/brdiep/Semantic-Segment-Anything
 
 # Set up modules/virtual environment
-module load python/3.8 scipy-stack cuda/11.1 opencv
+module --force purge
+module load StdEnv/2020 python/3.8 scipy-stack cuda/11.1 opencv
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 
