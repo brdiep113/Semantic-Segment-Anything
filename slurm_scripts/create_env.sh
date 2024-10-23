@@ -1,0 +1,1 @@
+conda env create -p /project/6080355/brdiep/Semantic-Segment-Anything/ssa -f /project/6080355/brdiep/Semantic-Segment-Anything/environment.yaml

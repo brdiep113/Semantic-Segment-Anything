@@ -10,20 +10,21 @@
 cd ~/projects/def-lingjzhu/brdiep/Semantic-Segment-Anything
 
 # Set up modules/virtual environment
-module --force purge
-module load StdEnv/2020 python/3.8 scipy-stack cuda/11.1 opencv
+module purge
+module load StdEnv/2020 python/3.8 cuda/11.1 opencv
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 
 pip install --no-index --upgrade pip
 pip install torch==1.9.0
 pip install torchvision==0.11.1 
-pip install torchaudio==0.9.1 
-pip install transformers==4.27.4 
+pip install torchaudio==0.9.0
+pip install transformers==4.27.4
+pip install numpy==1.24.2
+pip install mmcv-full==1.3.11
 pip install mmsegmentation==0.26.0 
 pip install mmdet==2.25.3 
-pip install spacy==3.5.1
-pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/mmcv_full-1.3.18-cp38-cp38-manylinux1_x86_64.whl
+pip install spacy[cuda] --no-index
 python -m spacy download en_core_web_sm
 
 pip freeze --local > requirements.txt
